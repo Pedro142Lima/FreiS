@@ -5,6 +5,7 @@ import Ex1 from "./pages/ex011";
 import React from 'react';
 import Ex2 from "./pages/ex022";
 import Ex3 from "./pages/ex033";
+import Ex4 from "./pages/ex044";
 
 
 export default function Nav() {
@@ -17,6 +18,7 @@ export default function Nav() {
                 <Route path ='/ex1' element= {<Ex1 />}/>
                 <Route path ='/ex2' element= {<Ex2 />}/>
                 <Route path = '/ex3' element= {<Ex3 />}/>
+                <Route path = '/ex4' element= {<Ex4 />}/>
                 
            
             </Routes>
