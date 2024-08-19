@@ -31,6 +31,9 @@ export default function Ex5() {
         else if (calculo >= 30){
             setTotal('obeso')
         }
+        else if (calculo > 32){
+            setTotal('thais carla')
+        }
 
 
         setRes (calculo.toFixed(2))
