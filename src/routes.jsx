@@ -6,7 +6,7 @@ import React from 'react';
 import Ex2 from "./pages/ex022";
 import Ex3 from "./pages/ex033";
 import Ex4 from "./pages/ex044";
-
+import Ex5 from "./pages/ex055";
 
 export default function Nav() {
     return (
@@ -19,6 +19,7 @@ export default function Nav() {
                 <Route path ='/ex2' element= {<Ex2 />}/>
                 <Route path = '/ex3' element= {<Ex3 />}/>
                 <Route path = '/ex4' element= {<Ex4 />}/>
+                <Route path = '/ex5' element= {<Ex5 />}/>
                 
            
             </Routes>

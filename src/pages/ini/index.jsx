@@ -50,6 +50,13 @@ export default function Inicial () {
                          <Link to= '/ex4'>Exercicio 04</Link>
                     </div>
 
+                    <div className="card">
+                         <div className="bola5"></div>
+
+                         <h6>Tabuada</h6>
+                         <Link to= '/ex5'>Exercicio 05</Link>
+                    </div>
+
                 </div>
             </div>
         </div>
