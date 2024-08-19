@@ -7,6 +7,7 @@ export default function Ex5() {
     const  [peso, setPeso] = useState(0)
     const [altura, setAltura] = useState(0)
     const [res, setRes] = useState(0)
+    const [total, setTotal] = useState([])
 
     function calc () {
         let peso1   = peso 
@@ -14,6 +15,7 @@ export default function Ex5() {
         let calculo = (peso1/altura1**2)*10000
         
         setRes (calculo.toFixed(2))
+        setTotal()
     }
 
  
@@ -53,6 +55,12 @@ export default function Ex5() {
                                 <input type="number" placeholder='altura' id="caixa" onChange={e => setAltura(e.target.value)} />
                                 
                                 <button onClick={calc}>Executar</button>
+
+
+                                <div className="tudos">
+                                    <p>{total}</p>
+                                    <button>apagar</button>
+                                </div>
                             </div>
                             
                   
