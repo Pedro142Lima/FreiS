@@ -14,8 +14,32 @@ export default function Ex5() {
         let altura1 = altura
         let calculo = (peso1/altura1**2)*10000
         
+        if (calculo <18.5){
+            setTotal('abaixo do peso')
+        }
+
+        else if (calculo >= 18.5 && calculo < 24.9){
+            setTotal('normal')
+        }
+
+        
+        else if (calculo >= 25.0 && calculo <= 29.9){
+            setTotal('sobre-peso')
+        }
+
+     
+        else if (calculo >= 30){
+            setTotal('obeso')
+        }
+
+
         setRes (calculo.toFixed(2))
-        setTotal()
+       
+    }
+
+    const limpar = () => {
+        setRes ('')
+        setTotal ('')
     }
 
  
@@ -59,7 +83,7 @@ export default function Ex5() {
 
                                 <div className="tudos">
                                     <p>{total}</p>
-                                    <button>apagar</button>
+                                    <button onClick={limpar}>apagar</button>
                                 </div>
                             </div>
                             
