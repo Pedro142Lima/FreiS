@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './index.scss'
 import { Link } from 'react-router-dom'
+import Header from '../../components/header'
 
 export default function Ex5() {
 
@@ -31,12 +32,10 @@ export default function Ex5() {
         else if (calculo >= 30){
             setTotal('obeso')
         }
-        else if (calculo > 32){
-            setTotal('thais carla')
-        }
 
 
         setRes (calculo.toFixed(2))
+        setTotal ([...total, calculo])
        
     }
 
@@ -48,17 +47,8 @@ export default function Ex5() {
  
     return (
         <main>
-            <header>
-                <div className="Logo">
-                    <img className="frei" src="/frei.png" alt="frei" />
-                    <h2>React FreiS</h2>
-                </div>
-                <div className="Sobre">
-                    <Link to='/inicial'>Inicial</Link>
-                    <Link to='/sobre'>Sobre</Link>
-                </div>
-
-            </header>
+           
+           <Header/>
 
 
             <div className="main">
@@ -101,7 +91,15 @@ export default function Ex5() {
                 </div>
 
                 <div className='Resultado1'>
-                    {res}
+               
+                    <ul>
+                        {total.map (item =>
+                            <li>{item}</li>
+                        )
+
+                        }
+                    </ul>
+           
                 </div>
             </div>
 

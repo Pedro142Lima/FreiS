@@ -1,11 +1,22 @@
 import { useState } from 'react'
 import './index.scss'
 import { Link } from 'react-router-dom'
-
+import Header from '../../components/header'
+import Linha from '../../components/linha'
 export default function Ex4() {
 
     const  [tabuada, setTabuada] = useState(0)
     const [array, setArray] = useState([])
+
+    let linhas = [
+        {
+            'cor_linha': 'roxo', 
+            'numEX':'4',
+            'titulo':' exercício do tabuada'
+         }
+
+         
+]   
 
 
     function calcTabuada ( ) {
@@ -20,27 +31,28 @@ export default function Ex4() {
     }
     return (
         <main>
-            <header>
-                <div className="Logo">
-                    <img className="frei" src="/frei.png" alt="frei" />
-                    <h2>React FreiS</h2>
-                </div>
-                <div className="Sobre">
-                    <Link to='/inicial'>Inicial</Link>
-                    <Link to='/sobre'>Sobre</Link>
-                </div>
-
-            </header>
+          
+          <Header/>
 
 
             <div className="main">
-                <div className="volte">
-                    <a href="">◄</a>
-                    <h1>Exercício 04 - Tabuada</h1>
+                
+            {linhas.map((item, index) => (
 
-                </div>
-                <div className="hr"><hr className='hr2' /></div>
+<div className="row1">
+    <Linha
+        key={index}
+      
+        titulo={item.titulo}
+        numEX={item.numEX}
+        cor_linha={item.cor_linha}
 
+    />
+</div>
+
+
+
+))}
                 <div className="txt">
                     <p>Tabuada </p>
                 </div>

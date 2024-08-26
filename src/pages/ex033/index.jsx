@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './index.scss'
 import { Value } from 'sass'
 import { Link } from 'react-router-dom'
+import Header from '../../components/header'
+import Linha from '../../components/linha'
 
 export default function Ex3() {
 
@@ -20,31 +22,41 @@ export default function Ex3() {
         setTotal (resultado)
     }
 
+    let linhas = [
+        {
+            'cor_linha': 'verde', 
+            'numEX':'3',
+            'titulo':' exercício do açai'
+         }
+
+         
+]   
+
+
 
     return (
         <main>
-            <header>
-                <div className="Logo">
-                    <img className="frei" src="/frei.png" alt="frei" />
-                    <h2>React FreiS</h2>
-                </div>
-                <div className="Sobre">
-                    <Link to='/inicial'>Inicial</Link>
-                    <Link to='/sobre'>Sobre</Link>
-                </div>
-
-            </header>
+           <Header/>
 
 
             <div className="main">
-                <div className="volte">
-                    <a href="">◄</a>
-                    <h1>Exercício 03 - Valor total por quantidade</h1>
+               
+            {linhas.map((item, index) => (
 
-                </div>
-                <div className="hr"><hr className='hr1
-                ' /></div>
+<div className="row1">
+    <Linha
+        key={index}
+      
+        titulo={item.titulo}
+        numEX={item.numEX}
+        cor_linha={item.cor_linha}
 
+    />
+</div>
+
+
+
+))}
                 <div className="txt">
                     <p>Implementar um programa em Javascript para calcular o total de uma venda de agai a partir das quantidades compradas para cada tamanho: pequeno, médio e grande, sabendo que o valor do agai & RS 13,50; RS 15,00 e RS 17,50 respectivamente.</p>
                 </div>
