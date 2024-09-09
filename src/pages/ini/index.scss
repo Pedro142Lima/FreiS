@@ -49,6 +49,7 @@ header {
         display: flex;
         flex-direction: row;
         gap: 8vh;
+        flex-wrap: wrap;
        h6 {
         font-size: 2vh;
        }

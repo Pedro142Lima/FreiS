@@ -38,9 +38,9 @@ export default function Inicial () {
 
         {
             'link_card': '/ex6',
-            'titulo': 'pessoa',
-            'numEX': '06',
-            'cor_card': 'roxo'
+            'titulo': 'IMC',
+            'numEX': '05',
+            'cor_card': 'marrom'
         },
 
     
