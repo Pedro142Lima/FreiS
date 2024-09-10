@@ -1,11 +1,20 @@
 main {
     display: flex;
     flex-direction: column;
+
+
+
    }
 
 
    
-   
+   .seja{
+      align-self: center;
+      align-items: center;
+      align-content: center;
+      display: flex;
+
+   }
 
    
    
@@ -37,7 +46,9 @@ main {
    #caixa3 {
  
       display: flex;
-     
+
+      justify-content: center;
+       align-items: center;
    }
    
     .login1{
@@ -46,23 +57,23 @@ main {
    
        width: 140vh;
        height: 20vh;
+
+       
      
        display: flex;
        flex-direction: row;
-       gap: 2vh;
+   
        justify-content: center;
        align-items: center;
       
-       margin-top: 5vh;
        border-radius: 2vh; 
    
-      
     
     }
    
     }
  .Resultado1 {
-   text-align: end;
+   text-align: center;
    margin-top: 5vh;
    margin-right: 23vh;
  }

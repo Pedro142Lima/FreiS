@@ -17,31 +17,49 @@ export default function Inicial () {
 
         {
             'link_card': '/ex2',
-            'titulo': 'gramas',
+            'titulo': 'Converter KG em GRAMAS',
             'numEX': '02',
             'cor_card': 'azul'
         },
 
         {
             'link_card': '/ex3',
-            'titulo': 'açai',
+            'titulo': 'Valor total por quantidade',
             'numEX': '03',
             'cor_card': 'verde'
+        },
+        {
+            'link_card': '/ex7',
+            'titulo': 'Tempo para ler livro',
+            'numEX': '4',
+            'cor_card': 'ciano'
+        },
+
+        {
+            'link_card': '/ex8',
+            'titulo': 'Média de notas',
+            'numEX': '5',
+            'cor_card': 'rosa'
+        },
+
+
+        {
+            'link_card': '/ex6',
+            'titulo': 'IMC',
+            'numEX': '10',
+            'cor_card': 'marrom'
         },
 
         {
             'link_card': '/ex4',
             'titulo': 'tabuada',
-            'numEX': '04',
+            'numEX': '11',
             'cor_card': 'roxo'
         },
 
-        {
-            'link_card': '/ex6',
-            'titulo': 'IMC',
-            'numEX': '05',
-            'cor_card': 'marrom'
-        },
+        
+
+ 
 
     
        ]

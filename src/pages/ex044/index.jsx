@@ -11,7 +11,7 @@ export default function Ex4() {
     let linhas = [
         {
             'cor_linha': 'roxo', 
-            'numEX':'4',
+            'numEX':'11',
             'titulo':' exercício do tabuada'
          }
 
@@ -58,15 +58,19 @@ export default function Ex4() {
                 </div>
 
                 <div className="caixa1">
+             
                     <div className="login2" id='caixa3'>
+                   
                         <div className='login1'>
-                            <div className='seja'>
-                                <p>Digite a tabuada</p>
+                                 <p>Digite a tabuada</p>
+                            <div className='seja'>  
                                 <input type="number" placeholder='0' id="caixa" onChange={e => setTabuada(e.target.value)} />
                             </div>
                             
                             <button onClick={calcTabuada} >Executar</button>
                         </div>
+
+                        
                        
                     </div>
 

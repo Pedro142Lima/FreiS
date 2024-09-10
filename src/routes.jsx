@@ -8,6 +8,8 @@ import Ex3 from "./pages/ex033";
 import Ex4 from "./pages/ex044";
 import Ex5 from "./pages/ex055";
 import Ex6 from "./pages/ex066";
+import Ex7 from './pages/ex077';
+import Ex8 from './pages/ex088';
 
 export default function Nav() {
     return (
@@ -22,6 +24,8 @@ export default function Nav() {
                 <Route path = '/ex4' element= {<Ex4 />}/>
                 <Route path = '/ex5' element= {<Ex5 />}/>
                 <Route path = '/ex6' element= {<Ex6 />}/>
+                <Route path = '/ex7' element= {<Ex7 />}/>
+                <Route path = '/ex8' element= {<Ex8 />}/>
                 
            
             </Routes>

@@ -92,7 +92,7 @@ export default function Ex6() {
 
                 
             <input
-                type="text" value={nome} onChange={(e) => setNome(e.target.value)} placeholder="Peso (kg)"
+                type="text" value={nome} onChange={(e) => setNome(e.target.value)} placeholder="Nome"
             />
             <input type="text" value={peso} onChange={(e) => setPeso(e.target.value)} placeholder="Peso (kg)"
             />

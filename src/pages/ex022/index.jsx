@@ -24,7 +24,7 @@ export default function Ex2() {
         {
             'cor_linha': 'azul',
             'numEX': '2',
-            'titulo': ' exercício do gramas'
+            'titulo': ' Converter KG em GRAMAS'
         }
 
 

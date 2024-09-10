@@ -26,7 +26,7 @@ export default function Ex3() {
         {
             'cor_linha': 'verde', 
             'numEX':'3',
-            'titulo':' exercício do açai'
+            'titulo':' Valor total por quantidade'
          }
 
          
@@ -64,7 +64,7 @@ export default function Ex3() {
                 <div className="caixa1">
                     <div className="login2" id='caixa3'>
                         <div className='login1'>
-                            <div className='seja'>
+                            <div>
                                 <p>Quantidade pequeno</p>
                                 <input type="number" placeholder='0' id="caixa" onChange={e => setPeq(e.target.value)} />
                             </div>
